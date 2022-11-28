@@ -1,7 +1,8 @@
 ﻿#include <stdio.h>
 int main()
-{	
-	int a, b;
+{
+	// Задача 1
+	int pin1, pin2;
 
 	printf("input pin1");
 	scanf_s("%i", &pin1);
@@ -23,13 +24,13 @@ int main()
 	printf("input password");
 	scanf_s("%ld", &password);
 
-	if (a > b) {
-		printf("A is bigger");
+	if ((login == 1) && (password == 123)) {
+		printf("Добро пожаловать user1");
 	}
-	else if (a == b) {
-		printf("Numbers are equal");
-	} 
+	else if ((login == 2) && (password == 321)) {
+		printf("Добро пожаловать user2");
+	}
 	else {
-		printf("B is bigger");
+		printf("Пользователь с таким логином или паролем не найден");
 	}
 }
