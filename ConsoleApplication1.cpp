@@ -1,36 +1,52 @@
 ﻿#include <stdio.h>
-int main()
+int main() 
 {
-	// Задача 1
-	int pin1, pin2;
+	int day;
 
-	printf("input pin1");
-	scanf_s("%i", &pin1);
-	printf("input pin2");
-	scanf_s("%i", &pin2);
+	printf("Input day number");
+	scanf_s("%i", &day);
 
-	if ((pin1 == 123) && (pin2 == 321)) {
-		printf("Добро пожаловать user");
-	}
-	else {
-		printf("Пользователь с таким логином или паролем не найден");
-	}
-
-	// Задача 2
-	long int login, password;
-
-	printf("input login");
-	scanf_s("%ld", &login);
-	printf("input password");
-	scanf_s("%ld", &password);
-
-	if ((login == 1) && (password == 123)) {
-		printf("Добро пожаловать user1");
-	}
-	else if ((login == 2) && (password == 321)) {
-		printf("Добро пожаловать user2");
-	}
-	else {
-		printf("Пользователь с таким логином или паролем не найден");
+	switch (day)
+	{
+		case 1:
+		{
+			printf("Monday");
+			break;
+		}
+		case 2: 
+		{
+			printf("Tuesday");
+			break;
+		}
+		case 3:
+		{
+			printf("Wednesday");
+			break;
+		}
+		case 4:
+		{
+			printf("Thursday");
+			break;
+		}
+		case 5:
+		{
+			printf("Friday");
+			break;
+		}
+		case 6:
+		{
+			printf("Saturday");
+			break;
+		}
+		case 7:
+		{
+			printf("Sunday");
+			break;
+		}
+		default: 
+		{
+			printf("Input error");
+			break;
+		}		
 	}
 }
